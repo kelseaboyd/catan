@@ -29,7 +29,7 @@ while game_active:
             deck = new_deck()
             print("\n*** new deck ***")
         turn_start = input(f"\n\n{s.name}'s turn\npress enter to start ")
-        if turn_start is "q":
+        if turn_start == "q":
             for s in settlers:
                 print(f"{s.name}'s longest turn was {s.longest_turn}")
             quit()
@@ -38,7 +38,7 @@ while game_active:
         start = time.time()
         print(f"\nthe card is {card}\n")
         turn_end = input(f"currently {s.name}'s turn\npress enter to end turn ")
-        if turn_end is "q":
+        if turn_end == "q":
             for s in settlers:
                 print(f"{s.name}'s longest turn was {s.longest_turn}")
             quit()
